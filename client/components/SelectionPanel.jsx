@@ -5,6 +5,7 @@ const SelectionPanel = (props) => {
         <div className="col-xs-12 col-xxl-6">
             <div className="card">
                 <h3>{props.season}</h3>
+                <i class="fas fa-snowflake"></i>
             </div>
         </div>
     )
