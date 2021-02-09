@@ -1,4 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Login from './components/Login.jsx';
+import SelectionScreen from './components/SelectionScreen.jsx';
 
-ReactDOM.render(<h1>Hello from app</h1>, document.getElementById('app'));
+ReactDOM.render(<SelectionScreen />, document.getElementById('app'));
