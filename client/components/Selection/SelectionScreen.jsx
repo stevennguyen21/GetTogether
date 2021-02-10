@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './SelectionScreen.css';
 import SelectionPanel from './SelectionPanel.jsx';
+import SelectionCarousel from './SelectionCarousel.jsx';
 
 const SelectionScreen = () => {
     const [seasons, setSeasons] = useState(['Winter', 'Spring', 'Summer', 'Fall']);
@@ -15,6 +16,11 @@ const SelectionScreen = () => {
                         </h1>
                         <hr />
                     </div>
+                </div>
+            </div>
+            <div className="container">
+                <div className="row">
+                    <SelectionCarousel />
                 </div>
             </div>
             <div className="container-fluid-padding">
