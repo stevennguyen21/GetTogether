@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Login from './components/Login.jsx';
-import SelectionScreen from './components/Selection/SelectionScreen.jsx';
+import Navbar from './components/Navbar.js';
 
-ReactDOM.render(<SelectionScreen />, document.getElementById('app'));
+ReactDOM.render(<Navbar />, document.getElementById('app'));
