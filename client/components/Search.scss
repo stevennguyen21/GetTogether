@@ -1,0 +1,11 @@
+.search-outer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}

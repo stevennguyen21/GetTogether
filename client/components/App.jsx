@@ -3,11 +3,11 @@ import axios from 'axios';
 import Search from './Search.jsx';
 
 const App = () => {
-
+    const [page, setPage] = useState('search');
 
     return (
         <div>
-            <Search />
+            <Search setPage={setPage}/>
         </div>
     )
 }
