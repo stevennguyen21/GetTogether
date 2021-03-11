@@ -9,7 +9,13 @@ app.use(express.static('public'));
 app.use(express.json());
 
 app.post('/key', (req, res) => {
-    console.log(req.body);
+    let number = req.body.data.number;
+    let connections = req.body.data.connections;
+    let result = [];
+    let first = sampleData.buses[number];
+    let second = sampleData.buses[first[0]]
+    console.log(number, first, second);
+
     res.send('hello');
 })
 

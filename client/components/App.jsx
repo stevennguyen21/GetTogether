@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react';
 import "babel-polyfill";
 import axios from 'axios';
 import Search from './Search.jsx';
+import Graph from './Graph.jsx';
 
 const App = () => {
     const [page, setPage] = useState('search');
@@ -22,7 +23,8 @@ const App = () => {
 
     return (
         <div>
-            <Search setPage={setPage} getBuses={getBuses}/>
+            {/* <Search setPage={setPage} getBuses={getBuses}/> */}
+            <Graph />
         </div>
     )
 }
