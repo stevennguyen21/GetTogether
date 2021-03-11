@@ -17,7 +17,13 @@ const Search = (props) => {
                     <input type="search" value={connections} onChange={(e) => {setConnections(e.target.value)}}></input>
                 </div>
                 <div>
-                    <button onClick={() => {props.setPage("home")}}>Go</button>
+                    <button onClick={() => 
+                        {
+                            props.setPage("home");
+                            props.getBuses(70050, 2);
+                        }}>
+                            Go
+                        </button>
                 </div>
             </div>
         </div>
